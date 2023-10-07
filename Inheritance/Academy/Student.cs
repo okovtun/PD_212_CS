@@ -45,7 +45,15 @@ namespace Academy
 		}
 		public override string ToString()
 		{
-			return base.ToString() + " " + $"{Speciality} {Group} {Rating} {Attendance}";
+			return base.ToString() + ", " + $"{Speciality}, {Group}, {Rating}, {Attendance}";
+		}
+		public override void Init(string[] values)
+		{
+			base.Init(values);
+			Speciality = values[4];
+			Group = values[5];
+			Rating = Convert.ToDouble(values[6]);
+			Attendance = Convert.ToDouble(values[7]);
 		}
 		public override void Print()
 		{

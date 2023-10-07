@@ -31,7 +31,13 @@ namespace Academy
 		}
 		public override string ToString()
 		{
-			return $"{LastName} {FirsName} {Age}";
+			return $"{LastName}, {FirsName}, {Age}";
+		}
+		public virtual void Init(string[] values)
+		{
+			LastName = values[1];
+			FirsName = values[2];
+			Age = Convert.ToInt32(values[3].Split(' ')[1]);
 		}
 
 		public virtual void Print()
