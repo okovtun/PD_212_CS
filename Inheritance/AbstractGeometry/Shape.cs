@@ -8,7 +8,7 @@ using System.Windows.Forms;
 
 namespace AbstractGeometry
 {
-	abstract class Shape
+	abstract class Shape:IServiceProvider, IReadOnlyList
 	{
 		public static readonly int MIN_START_X = 10;
 		public static readonly int MAX_START_X = 1000;
@@ -69,7 +69,7 @@ namespace AbstractGeometry
 		{
 			Console.WriteLine($"Площадь  фигуры: {this.GetArea()}");
 			Console.WriteLine($"Периметр фигуры: {this.GetPerimeter()}");
-			this.Draw(e);
+			//this.Draw(e);
 			Console.WriteLine();
 		}
 	}
