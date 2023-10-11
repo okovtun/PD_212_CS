@@ -32,3 +32,24 @@ namespace AbstractGeometry
 		public static extern IntPtr GetDC(IntPtr hwnd);
 	}
 }
+
+/*
+-------------------------------------------
+class DerivedClass:BaseClass
+{
+	.....
+}
+-------------------------------------------
+class Class:Interface
+{
+	....
+
+
+}
+IMoveable	- объект можно перемещать
+IComparable - объекты можно сравнивать
+IClickable  - на 
+ISortable	- значит что объект является контейнером (коллекцией), и его можно сортировать
+.....
+-------------------------------------------
+ */
